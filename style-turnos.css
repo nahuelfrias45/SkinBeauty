@@ -1,0 +1,81 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+
+header {
+    background-color: rgb(117, 19, 117,0.5);
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    z-index: 9999;
+    align-items: center;
+}
+
+nav > a {
+    margin-left: 25px;
+    width: 80px;
+    height: 50px;
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+/* MAIN */
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(117, 19, 117);
+    opacity: 0.5;
+    pointer-events: none; /* Para permitir que los clics pasen a través del overlay */
+}
+
+main > section > img {
+    width: 100vw;
+    height: 100vh;
+    aspect-ratio: 3/2;
+}
+
+
+main > section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    position: absolute;
+    display: flex;
+    background-color: white;
+    padding: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form-container {
+    display: flex;
+    gap: 30px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}

@@ -1,0 +1,2 @@
+#ignora la carpeta node_modules porque trae muchos archivos
+/node_modules
